@@ -12,5 +12,6 @@ app.use(express.json());
 
 app.use('/appointment', require('./routes/appointmentRoutes'));
 
-const PORT = process.env.PORT || "https://appointment-management-20q70itgv-priyankas-projects-64bdf94b.vercel.app";
+const PORT = process.env.PORT || 5000; // ✅ Not a URL
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+
